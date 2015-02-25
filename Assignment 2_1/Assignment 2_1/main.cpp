@@ -18,15 +18,18 @@ const int ARRAY_SIZE = 4;
 const int MIN_RANGE = 0;
 const int MAX_RANGE = 100;
 
+
 // Main function
 int main()
 {
+	generateSeed();
+
 	// Create two arrays populated with random numbers
 	int* Array1 = createArray(ARRAY_SIZE, MIN_RANGE, MAX_RANGE); // One of these days I'll understand why ponters are so cool
 	int* Array2 = createArray(ARRAY_SIZE, MIN_RANGE, MAX_RANGE); // Right now I find them a tad irritating
 
 	// Create the third array
-	int* Array3 = mergeArrays(Array1, Array2);
+	int* Array3 = mergeArrays(Array1, Array2, ARRAY_SIZE);
 
 	// Display Header
 	printHeader();
