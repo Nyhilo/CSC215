@@ -10,15 +10,11 @@ Source file for function definitions.
 #include <ctime>
 #include "Arrays.h"
 
-// Generate the seed to be used for random number generation
-void generateSeed()
-{
-	srand(time(NULL)); // Generate seed for rand()
-}
-
 // Function to create an array with n random numbers between 0 and x
 int* createArray(int arraySize, int minRange, int maxRange)
 {
+	srand(rand() ^ time(NULL)); // Generate seed for rand()
+
 	int* Array = new int[arraySize]; // Create a pointer to a new array
 
 	for (size_t i = 0; i < arraySize; i++) // Loop to assign values to each index in the array

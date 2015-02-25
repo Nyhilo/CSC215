@@ -22,8 +22,6 @@ const int MAX_RANGE = 100;
 // Main function
 int main()
 {
-	generateSeed();
-
 	// Create two arrays populated with random numbers
 	int* Array1 = createArray(ARRAY_SIZE, MIN_RANGE, MAX_RANGE); // One of these days I'll understand why ponters are so cool
 	int* Array2 = createArray(ARRAY_SIZE, MIN_RANGE, MAX_RANGE); // Right now I find them a tad irritating
