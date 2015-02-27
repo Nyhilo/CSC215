@@ -9,14 +9,21 @@ It can add, subtract, multiply, and divide.
 #include <iostream>
 #include "Calculator.h"
 #include "Calculator.cpp"
+#include <cstdlib>
 
 int main()
 {
     // Main while loop
     bool running = true;
+    int count = 5;
     while(running)
     {
-        print header
+        printHeader();
+        count--;
+        if(count == 0)
+        {
+            running = false;
+        }
     }
 
     // Wait for user input

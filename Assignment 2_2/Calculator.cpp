@@ -45,7 +45,7 @@ double divide (double num1, double num2)
 // Program Header function
 void printHeader()
 {
-    std::cout << "+-----------------------+\n"
-    std::cout << "| Text-Based Calculator |\n"
+    std::cout << "+-----------------------+\n";
+    std::cout << "| Text-Based Calculator |\n";
     std::cout << "+-----------------------+\n" << std::endl;
 }
