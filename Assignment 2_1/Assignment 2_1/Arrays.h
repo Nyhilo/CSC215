@@ -1,5 +1,5 @@
 /*
-Header file for constant variables and function prototypes.
+Header file for function prototypes.
 
 ~Jacob Cloward
 2/24/2015
